@@ -31,6 +31,8 @@ nav a:visited,
 nav a:link {
     color: #010101;
     text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 20px;
 }
 
 nav > ul {
@@ -41,7 +43,7 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     list-style: none;
-    margin: 0 5px 0 5px;
+    margin: 0 15px 0 15px;
 }
 
 footer {
@@ -51,12 +53,12 @@ footer {
 
 aside,
 article {
-    padding: 2em;
+    padding: 1em;
 }
 
 aside { 
     text-align: center;
     font-family: 'Codystar'; 
-    font-size: 25px;
+    font-size: 40px;
 }
 
