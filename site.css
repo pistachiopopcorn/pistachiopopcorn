@@ -67,20 +67,6 @@ article {
     display: flex;
 }
 
-@media only screen and (min-width: 768px) {
-   main {
-       display: flex;
-   } 
-}
-
-aside {
-    margin-left: 2%;
-}
-
-.columns-desktop {
-    display: flex;
-}
-
 /* Box */
 
 .box {
@@ -116,3 +102,19 @@ aside {
     position: relative;
 
 }
+
+
+@media only screen and (min-width: 768px) {
+   main {
+       display: flex;
+   } 
+}
+
+aside {
+    margin-left: 2%;
+}
+
+.columns-desktop {
+    display: flex;
+}
+
