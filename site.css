@@ -23,11 +23,12 @@ header {
     left: 0;
     width: 100%;
     text-align: center;
+    background-color: #444;
 }
 
 nav a:visited,
 nav a:link {
-    color: #010101;
+    color: #fff;
     text-decoration: none;
     font-family: 'Montserrat';
     font-size: 20px;
@@ -40,12 +41,12 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     list-style: none;
-    margin: 0 15px 0 15px;
+    margin: 0 15px 10px 15px;
 }
 
 main {
-    display: block;
-    padding: 15em 10em 15em 10em;
+    display: flex;
+    padding: 200px 200px 200px 200px;
 }
 
 aside,
@@ -56,6 +57,7 @@ article {
 aside { 
     font-family: 'Codystar'; 
     font-size: 40px;
+    color: #fff;
 }
 
 article {
@@ -63,45 +65,32 @@ article {
     width: 50%;
 }
 
-.columns {
+/* Cards */
+
+.cards {
     display: flex;
-}
-
-/* Box */
-
-.box {
-    width: 200px; 
-    padding: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .card {
+    flex: 0 0 200px;
     margin: 10px;
-    background-color: #fff;
-    border: solid 3px #010101;
-    justify-content: center;
-    align-items: center;
-}
-
-.box img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
     width: 100%;
-}
-
-.box .title { 
-    font-weight: bold;
-    text-align: center;
-}
-
-.box .desc {
-    text-align: center;
-    font-size: smaller;
-}
-
-.box button {
-    background-color: #010101;
-    padding: 5px 5px 5px 5px;
-    border: solid 1px #010101;
-    border-radius: 3px;
-    color: #fff;
-    position: relative;
-
-}
+    }
 
 
 @media only screen and (min-width: 768px) {
