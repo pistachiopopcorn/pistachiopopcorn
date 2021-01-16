@@ -65,6 +65,10 @@ article {
     width: 50%;
 }
 
+p {
+    font-family: 'Montserrat'
+}
+
 /* Cards */
 
 .cards {
