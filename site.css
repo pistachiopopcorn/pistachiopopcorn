@@ -5,7 +5,8 @@
 p {
     color: black;
     font-family: 'Montserrat';
-    padding:5px;margin:5px;
+    padding:15px;
+    margin:0px;
     font-size: 1em;
 }
 
@@ -52,6 +53,7 @@ article {
     width: 100%;
 }
 
+
 /* Cards */
 
 .cards {
@@ -59,28 +61,42 @@ article {
     display: flex;
     flex-flow: row wrap;
     align-items:unset;
+    justify-content: space-between;
+    margin: 2em;
   }
   .card {
     flex: 0 0 200px;
-    margin: 10px;
     border: 1px solid #ccc;
+    margin: 10px;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   } 
   .card img {
     max-width: 100%;
     max-height: 50%;
   }
-  .card .text {
-    padding: 0 20px 20px;
+  
+  .card h3 {
+    margin:0;
+    font-size: 18px;
+    text-align: center;
   }
-  .card .text > button {
-    background: gray;
+  
+  .card .text {
+    padding:0;
+    margin:0;
+    font-size: 15px;
+  }
+
+  .card a {
+    background:grey;
     border: 0;
     color: white;
-    padding: 10px;
-    width: 100%;
-    }
-
+    font-size: 13px;
+    text-decoration: none;
+    padding: 8px 12px 8px 12px;
+    margin: 25%;
+    border-radius: 3px;
+  }
 
 @media only screen and (min-width: 768px) {
    main {
