@@ -49,7 +49,7 @@ aside {
 
 article {
     font-family: 'Montserrat';
-    width: 50%;
+    width: 100%;
 }
 
 /* Cards */
@@ -58,7 +58,7 @@ article {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
-    align-items: stretch;
+    align-items:unset;
   }
   .card {
     flex: 0 0 200px;
