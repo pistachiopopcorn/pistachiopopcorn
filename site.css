@@ -99,6 +99,36 @@ article {
     border-radius: 3px;
   }
 
+  /* Media Object */
+
+  .media {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex: 0 0 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  }
+
+  .media img {
+    max-width: 100%;
+    max-height: 100%;
+    padding:0;
+    margin:10;
+  }
+
+  .media-object {
+    margin-right: 1em;
+  }
+
+  .media-body {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }
+
 @media only screen and (min-width: 768px) {
    main {
        display: flex;
