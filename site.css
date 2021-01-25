@@ -19,6 +19,15 @@ header {
     flex-direction:column;
 }
 
+footer {
+  display:flex;
+  background: #4d4b4b;
+  padding-top:18px;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-direction:column;
+}
+
 nav a:visited,
 nav a:link {
     color: #fff;
