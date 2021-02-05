@@ -21,11 +21,10 @@ header {
 
 footer {
   display:flex;
+  flex-flow: column;
+  justify-content: center;
   background: #4d4b4b;
   padding-top:18px;
-  align-items: center;
-  flex-flow: row wrap;
-  flex-direction:column;
 }
 
 nav a:visited,
@@ -70,7 +69,7 @@ article {
     display: flex;
     flex-flow: row wrap;
     align-items:unset;
-    justify-content: space-between;
+    justify-content: center;
     margin: 2em;
   }
   .card {
@@ -80,8 +79,9 @@ article {
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   } 
   .card img {
-    max-width: 100%;
-    max-height: 50%;
+    max-height: 60%;
+    max-width: 75%;
+    padding: 25px;
   }
   
   .card h3 {
@@ -96,28 +96,40 @@ article {
     font-size: 15px;
   }
 
-  .card a {
+  .card .text a {
     background:grey;
-    border: 0;
     color: white;
     font-size: 13px;
-    font-weight:bold;
     text-decoration: none;
     padding: 8px 12px 8px 12px;
-    margin: 20%;
+    margin: 25%;
     border-radius: 3px;
   }
 
   /* Media Object */
 
+  .media-card {
+    list-style-type: none;
+    display:flex;
+    max-width:75%;
+    align-items:center;
+    flex: 20%;
+    border: 1px solid #ccc;
+    margin: 10px;
+    box-shadow:1px 1px 3px 0px rgba(0,0,0,0.3);
+  }
+
+  .media:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
   .media {
     list-style-type: none;
     display: flex;
     align-items: flex-start;
-    flex: 0 0 200px;
+    flex: 0 0 25%;
     border: 1px solid #ccc;
     margin: 10px;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 4px 0px  rgba(0,0,0,0.3);
   }
 
   .media img {
@@ -127,16 +139,50 @@ article {
     margin:10;
   }
 
-  .media-object {
-    margin-right: 1em;
+  .media text {
+    font-size:1em;
   }
 
-  .media-body {
-    flex: 1;
-  }
-  .media-heading {
-    margin: 0 0 .5em;
-  }
+/* Stories */
+
+  .story {
+  list-style-type: none;
+  display: flex;
+  flex: 1em;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  margin: 10px;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+} 
+
+.story img {
+  max-width: 100%;
+  max-height: 100%;
+  padding:0;
+  margin:10;
+}
+
+.story text {
+  font-family: 'Montserrat';
+  font-size: 1em;
+  text-align: center;
+}
+
+.story a {
+  background:grey;
+  border: 0;
+  color: white;
+  font-size: 13px;
+  font-family: 'Montserrat';
+  text-decoration: none;
+  padding: 8px 12px 8px 12px;
+  border-radius: 3px;
+}
+
+.story a:hover {
+  box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+}
 
 @media only screen and (min-width: 768px) {
    main {
