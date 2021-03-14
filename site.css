@@ -159,6 +159,7 @@ article {
 .poptakes {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   flex: 0 0 25%;
   border: 1px solid #ccc;
@@ -177,14 +178,15 @@ article {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   flex-direction: row;
   max-height: 100vh;
-  justify-content: center;
 }
 .poptakes-intro img {
   margin: 10px;
   border: 1px solid #000;
-  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  max-height: 30vh;
   max-width: 25vw;
   cursor:pointer;
 }
